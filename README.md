@@ -1,4 +1,4 @@
-<img src="assets/logo.png" alt="My Photo" style="width:10%; height:auto;" />
+<img src="Assets/logo.png" alt="Postbox Logo" style="width:10%; height:auto;" />
 
 ### Altitude Office
 # PostBox
