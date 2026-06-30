@@ -18,6 +18,8 @@ qt_add_qml_module(appPostbox
     VERSION 1.0
     QML_FILES
         qml/Main.qml
+        qml/Theme.qml
+        qml/Themes/ThemeDark.qml
 )
 
 qt_add_resources(appPostbox "Postbox"
