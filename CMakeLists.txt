@@ -8,6 +8,10 @@ find_package(Qt6 6.8 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
+set_source_files_properties(qml/Theme.qml PROPERTIES
+    QT_QML_SINGLETON_TYPE TRUE
+)
+
 qt_add_executable(appPostbox
     src/main.cpp
     app.rc
@@ -19,6 +23,12 @@ qt_add_qml_module(appPostbox
     QML_FILES
         qml/Main.qml
         qml/Theme.qml
+)
+
+qt_add_resources(appPostbox "PostboxThemes"
+    PREFIX
+        "/Postbox/Themes"
+    FILES
         qml/Themes/ThemeDark.qml
 )
 

@@ -7,6 +7,7 @@ ApplicationWindow {
     height: 480
     visible: true
     title: qsTr("Postbox")
+    color: Theme.backgroundColor
 
     Rectangle {
         anchors.fill: parent
@@ -15,6 +16,22 @@ ApplicationWindow {
         Column {
             anchors.centerIn: parent
             spacing: 16
+
+            Rectangle {
+                width: 320
+                height: 48
+                radius: 10
+                color: ThemeDark.backgroundColor
+                border.color: ThemeDark.accentColor
+                border.width: 2
+
+                Text {
+                    anchors.centerIn: parent
+                    text: "Direct ThemeDark sample"
+                    color: ThemeDark.bodyTextColor
+                    font.pixelSize: 18
+                }
+            }
 
             Rectangle {
                 width: 320
