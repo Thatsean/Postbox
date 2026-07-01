@@ -15,6 +15,13 @@ int main(int argc, char *argv[])
         1,
         0,
         "ThemeDark");
+    
+    qmlRegisterSingletonType(
+        QUrl("qrc:/Postbox/Themes/qml/Themes/ThemeLight.qml"),
+        "Postbox",
+        1,
+        0,
+        "ThemeLight");
 
     QQmlApplicationEngine engine;
     QObject::connect(

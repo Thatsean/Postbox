@@ -8,5 +8,5 @@ QtObject {
     readonly property color accentColor: "#944473"
     readonly property color bodyTextColor: "#FFFFFF"
     readonly property color subTextColor: "#A2A2A2"
-    readonly property color outlineColor: null //I hope this works
+    readonly property color outlineColor: "transparent" //I hope this works
 }
